@@ -15,11 +15,11 @@ namespace Laba8_W
         {
             array = new T[size];
         }
-        public void AddElem(int index, T item) // Добавление элементов
+        public void AddElem(int index, T item) 
         {
             array[index] = item;
         }
-        public void DeleteElem(T item) // удаление элемента
+        public void DeleteElem(T item) 
         {
            int index =  Array.IndexOf(array, item);
            if (index > -1)
@@ -34,11 +34,11 @@ namespace Laba8_W
                 array = newItem;
            }
         }
-        public T GetElem(int index) // получение элемента
+        public T GetElem(int index) 
         {
             return array[index];
         }
-        public int GetLength() // получение длинны
+        public int GetLength() 
         {
             return array.Length;
         }
